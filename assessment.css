@@ -2,3 +2,34 @@
    color: forestgreen;
    font-size: 1.5em;
  }
+
+table, th, td{
+  border: 1px solid black;
+  text-align: center;
+}
+
+thead{
+  font-weight: bold;
+  color: forestgreen;
+}
+
+ul,ol{
+  list-style-type: square;
+}
+
+a:hover{
+  background-color: black;
+  color:white;
+  text-decoration: none;
+}
+
+blockquote{
+  background-color: black;
+  color:rgb(26, 255, 128);
+}
+
+li:first-child{
+  background-color: red;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
+  /*background-repeat: no-repeat;*/
+}
