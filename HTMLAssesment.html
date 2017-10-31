@@ -17,9 +17,9 @@ That's why I paint - because I can create the kind of world I want - and I can m
       <table cellspacing="10">
           <tr>
               <th rowspan="2">Team Name</th>
-              <th>First Half</th>
-              <th>Second Half</th>
-              <th>Final</th>
+              <th colspan="2">First Half</th>
+              <th colspan="2">Second Half</th>
+              <th rowspan="2">Final</th>
           </tr>
           <tr>
               <th>Q1</th>
@@ -112,14 +112,44 @@ That's why I paint - because I can create the kind of world I want - and I can m
       </ul>
 
       <h1>FORM</h1>
-      
+
             <form>
               First name:<br>
               <input type="text" name="firstname"><br>
               Last name:<br>
               <input type="text" name="lastname">
             </form>
+            <br>
+            <select>
+              <option value="Football">Football</option>
+              <option value="Soccer">Soccer</option>
+              <option value="Paintball">Paintball</option>
+              <option value="Baseball">Baseball</option>
+            </select>
 
+            <h3> Which type of play do you prefer?</h3>
+            <form>
+                <input type="radio" name="preference" value="amateur" checked> Amateur<br>
+                <input type="radio" name="preference" value="college"> College<br>
+                <input type="radio" name="preference" value="professional"> Professional
+            </form>
+
+            <form>
+                  <h3>Have you done any of the following in relation to this sport?</h3>
+                  <input type="checkbox" id="sportInvolvement" name="played" value="play">
+                  <label for="sportInvolvement">Played</label>
+                  <input type="checkbox" id="sportInvolvement" name="bet" value="bet">
+                  <label for="sportInvolvement">Bet on</label>
+                  <input type="checkbox" id="sportInvolvement" name="attended" value="attended">
+                  <label for="sportInvolvement">Attended a live game</label>
+                  <input type="checkbox" id="sportInvolvement" name="Coached" value="Coached">
+                  <label for="sportInvolvement">Coached</label>
+
+            </form>
+            <br>
+            <form action="/action_page.php">
+                <input type="submit" value="Submit">
+           </form>
 
   </body>
 </html>
