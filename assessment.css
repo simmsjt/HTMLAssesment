@@ -28,8 +28,19 @@ blockquote{
   color:rgb(26, 255, 128);
 }
 
-li:first-child{
-  background-color: red;
+
+#teamRoster > :first-child{
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#teamRoster > :last-child{
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
-  /*background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#checkbox-grid li {
+  list-style-type: none;
 }
